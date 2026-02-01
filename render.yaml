@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: voice-detection-api
+    env: docker
+    plan: free
+    branch: main
+    healthCheckPath: /docs
+    envVars:
+      - key: PORT
+        value: 8000
